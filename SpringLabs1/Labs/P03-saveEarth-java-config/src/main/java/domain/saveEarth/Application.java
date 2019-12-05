@@ -1,10 +1,9 @@
 package domain.saveEarth;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.saveEarth.model.Sponsor;
@@ -18,8 +17,7 @@ public class Application {
 
 	private static void standardCode() {
 	
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
-				"applicationContext.xml");
+		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		
 		SponsorService sponsorService = applicationContext.getBean("sponsorService",
 				SponsorService.class);
