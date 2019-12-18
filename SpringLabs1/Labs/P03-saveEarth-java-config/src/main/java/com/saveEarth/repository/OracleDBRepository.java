@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.saveEarth.model.Sponsor;
 
-
+@Repository("dbRepository")
 public class OracleDBRepository implements SponsorRepository{
 
 	@Override

@@ -9,7 +9,7 @@ import com.saveEarth.model.Sponsor;
 import com.saveEarth.repository.OracleDBRepository;
 
 
-
+@Service("sponsorService")
 public class SponsorServiceImpl implements SponsorService {
 
 	private OracleDBRepository dbRepository;
