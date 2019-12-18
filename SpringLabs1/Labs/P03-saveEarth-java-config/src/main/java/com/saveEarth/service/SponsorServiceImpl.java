@@ -11,7 +11,7 @@ import com.saveEarth.repository.OracleDBRepository;
 
 @Service("sponsorService")
 public class SponsorServiceImpl implements SponsorService {
-
+	@Autowired
 	private OracleDBRepository dbRepository;
 
 	//Setter Injection
