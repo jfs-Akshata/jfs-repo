@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 
 import com.saveEarth.model.Sponsor;
 
-
+@Repository("dbRepository")
 public class OracleDBRepository implements SponsorRepository  {
 
 	@Override
@@ -27,7 +27,7 @@ public class OracleDBRepository implements SponsorRepository  {
 		// 3. Create the query
 		Statement statement = connection.createStatement();
 		// 4. Execute the query
-		ResultSet resultset = statement.executeQuery("select * from product");
+		ResultSet resultset = statement.executeQuery("select * from sponsor");
 		// 5. Display the results
 		while (resultset.next()) {
 			
