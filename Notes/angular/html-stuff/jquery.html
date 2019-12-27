@@ -1,0 +1,17 @@
+<html>
+<head>My Title</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <a href="http://www.google.com">My Link</a>
+    <h1>My Header</h1>
+    <p id="demo">Change</p>
+    <button style="color:red" type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+<script>
+    $(document).ready(function(){
+        $("#demo").click(function(){
+    $(this).html("jQuery").hide();
+    });
+  });
+</script>
+</body>
+</html>
